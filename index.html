@@ -24,10 +24,9 @@
   http://stackoverflow.com/questions/11929099/html5-canvas-drawimage-ratio-bug-ios
   
   Brief Description of Goal of Code:
-  blah, blah, blah,
- 
+The goal of this code is to create an image processing app that comverts a provided image into blue scale.  
   Known Issues:
-  blah, blah, blah, blah
+ For some reason the program zooms in on the processed image, wokring on a fix!
 -->
 
  <head>
@@ -101,7 +100,7 @@
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
-        
+        // etsablishes variables for image processing 
        var canvasBlueOnly = document.getElementById('canvasBlueOnly');
        var contextBlueOnly = canvasBlueOnly.getContext('2d');
 
@@ -119,8 +118,8 @@
       // data[i + 2] remains unchanged
 }
 
-// Put modified image data back to the canvas
-contextBlueOnly.putImageData(imageData, 0, 0);
+      // Put modified image data back to the canvas
+         contextBlueOnly.putImageData(imageData, 0, 0);
        
           
           
