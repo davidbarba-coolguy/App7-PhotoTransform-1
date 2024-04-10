@@ -102,9 +102,8 @@
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
         
-       /*Canvas for displaying only the blue component*/
-       <canvas id="canvasBlueOnly" width="600" height="500" style="border:1px solid #d3d3d3;"></canvas>
-
+       /* Canvas for displaying only the blue component */
+       
           
           
         } // end of img.onload
@@ -135,8 +134,13 @@
         <input type="file" id="fileInput" STYLE="background-color: #FF6600;">
       </div>
       <div id="messageDisplayArea"></div>
-      
+     
+     /* next line adds canvas for output image */
+     <canvas id="canvasBlueOnly" width="600" height="500"></canvas>
+     
+     /* next line adds canvas for original image */
       <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
+     
       <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
         var canvas = document.getElementById('myCanvas');
         var context = canvas.getContext("2d");
